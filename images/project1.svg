@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="p1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1f1a"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#p1)"/>
+  <rect x="24" y="24" width="352" height="34" rx="8" fill="#eef2f0" opacity="0.1"/>
+  <circle cx="40" cy="41" r="4" fill="#6ee7b7"/>
+  <circle cx="54" cy="41" r="4" fill="#eef2f0" opacity="0.4"/>
+  <circle cx="68" cy="41" r="4" fill="#eef2f0" opacity="0.4"/>
+  <text x="46" y="100" font-family="JetBrains Mono, monospace" font-size="16" fill="#6ee7b7">def solve():</text>
+  <text x="60" y="126" font-family="JetBrains Mono, monospace" font-size="14" fill="#eef2f0" opacity="0.7">return model.run()</text>
+  <text x="46" y="152" font-family="JetBrains Mono, monospace" font-size="16" fill="#6ee7b7">class Analysis:</text>
+  <rect x="46" y="172" width="180" height="8" rx="3" fill="#eef2f0" opacity="0.25"/>
+  <rect x="46" y="188" width="130" height="8" rx="3" fill="#eef2f0" opacity="0.25"/>
+</svg>

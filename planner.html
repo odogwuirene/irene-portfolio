@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner — Irene Odogwu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand"><img src="images/irene.jpg" alt="" class="avatar">Irene Odogwu</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" style="padding-bottom: 20px;">
+      <div class="arc-motif"></div>
+      <div class="wrap">
+        <span class="eyebrow-line">Stay organised</span>
+        <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Academic Planner</h1>
+        <p style="color: var(--text-muted); max-width: 60ch;">
+          A small task manager for coursework and deadlines. Add a task, tick it off when it's
+          done, or remove it entirely.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap planner-shell">
+
+        <div>
+          <h3 style="margin-bottom: 16px;">Add a task</h3>
+          <form id="task-form" class="planner-form">
+            <div class="field" style="margin-bottom:0;">
+              <label for="task-title">Task</label>
+              <input type="text" id="task-title" placeholder="e.g. Run regression on dataset" required>
+            </div>
+            <div class="row">
+              <div class="field" style="margin-bottom:0; flex:1;">
+                <label for="task-course">Course</label>
+                <input type="text" id="task-course" placeholder="e.g. COS 106">
+              </div>
+              <div class="field" style="margin-bottom:0; flex:1;">
+                <label for="task-due">Due date</label>
+                <input type="date" id="task-due">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="justify-content:center; margin-top:6px;">Add task</button>
+          </form>
+        </div>
+
+        <div>
+          <div class="planner-stats">
+            <span>Total: <strong id="stat-total">0</strong></span>
+            <span>Completed: <strong id="stat-done">0</strong></span>
+            <span>Pending: <strong id="stat-pending">0</strong></span>
+          </div>
+          <ul class="task-list" id="task-list"></ul>
+          <div class="empty-state" id="empty-state" style="display:none;">
+            No tasks yet — add your first one to get started.
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Irene Odogwu · Software Engineering</span>
+   <span><a href="contact.html" class="btn btn-ghost">Get in touch</a></span>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>
